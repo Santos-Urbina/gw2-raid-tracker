@@ -1,0 +1,19 @@
+{
+  "Wings": [
+    {
+      "Wing 1": {
+        "Bosses": {
+          "1": "Vale Guardian",
+          "2": "Spirit Woods",
+          "3": "Gorseval",
+          "4": "Sabetha"
+        }
+      },
+      "Wing 2": {
+        "Bosses": {
+          "1": "Cairn"
+        }
+      }
+    }
+  ]
+}

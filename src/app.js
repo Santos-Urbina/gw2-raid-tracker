@@ -2,7 +2,7 @@ const path = require("path");
 const express = require("express");
 const hbs = require("hbs");
 
-const gw2Api = require("./utils/gw2Api");
+const raidEncounterData = require("./utils/raidEncounterData");
 
 const app = express();
 const port = process.env.PORT || 8080;
