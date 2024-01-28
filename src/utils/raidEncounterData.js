@@ -3,7 +3,7 @@ const config = require("../../config.json");
 
 const accessToken = config.accessToken;
 
-const accountData = (callback) => {
+const raidEncounterData = (callback) => {
   const url = `https://api.guildwars2.com/v2/account/raids?access_token=${accessToken}`;
 
   request({ url, json: true }, (error, { body }) => {
@@ -18,11 +18,14 @@ const accountData = (callback) => {
   });
 };
 
-accountData((error, body) => {
-  if (error) {
-    return console.log(error);
-  }
-  if (body) {
-    return console.log(body);
-  }
-});
+//Testing
+// raidEncounterData((error, body) => {
+//   if (error) {
+//     return console.log(error);
+//   }
+//   if (body) {
+//     return console.log(body);
+//   }
+// });
+
+module.exports = raidEncounterData;

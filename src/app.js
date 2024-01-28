@@ -1,6 +1,7 @@
 const path = require("path");
 const express = require("express");
 const hbs = require("hbs");
+const chalk = require("chalk");
 
 const raidEncounterData = require("./utils/raidEncounterData");
 
@@ -26,6 +27,14 @@ app.get("", (req, res) => {
   });
 });
 
+app.get("/raids", (req, res) => {
+  raidEncounterData((error, body) => {
+    if (error) return res.send(error);
+
+    res.send({ body: body });
+  });
+});
+
 app.listen(port, () => {
-  console.log(`Server up on port ${port}`);
+  console.log(chalk.bgCyan.bold(`Server up on port ${port}`));
 });
