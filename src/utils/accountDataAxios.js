@@ -12,7 +12,7 @@ const accountData = (callback) => {
       //handle succecss
       //console.log(response.data);
       console.log("Successful api call");
-      callback(response);
+      callback(response.data);
     })
     .catch((error) => {
       //handle error
