@@ -36,7 +36,7 @@ app.get("", (req, res) => {
 //   });
 // });
 
-app.get("/raids", (req, res) => {
+app.get("/account", (req, res) => {
   accountData((error, body) => {
     if (error) return res.send(error);
 
