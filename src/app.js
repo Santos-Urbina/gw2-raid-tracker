@@ -4,6 +4,7 @@ const hbs = require("hbs");
 const chalk = require("chalk");
 
 const raidEncounterData = require("./utils/raidEncounterData");
+const accountData = require("./utils/accountDataAxios");
 
 const app = express();
 const port = process.env.PORT || 8080;
@@ -27,8 +28,16 @@ app.get("", (req, res) => {
   });
 });
 
+// app.get("/raids", (req, res) => {
+//   raidEncounterData((error, body) => {
+//     if (error) return res.send(error);
+
+//     res.send({ body: body });
+//   });
+// });
+
 app.get("/raids", (req, res) => {
-  raidEncounterData((error, body) => {
+  accountData((error, body) => {
     if (error) return res.send(error);
 
     res.send({ body: body });
