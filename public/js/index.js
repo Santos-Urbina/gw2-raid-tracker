@@ -12,7 +12,7 @@ accountDataButton.addEventListener("click", (e) => {
         console.log("404");
       } else {
         console.log("200");
-        accountDataText.textContent = JSON.stringify(data);
+        accountDataText.textContent = JSON.stringify(data, undefined, 2);
       }
     });
   });
