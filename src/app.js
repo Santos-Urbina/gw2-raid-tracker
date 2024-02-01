@@ -40,8 +40,7 @@ app.get("/account", (req, res) => {
   accountData((error, body) => {
     if (error) return res.send(error);
 
-    res.send({ body: body.name });
-    console.log(body.name);
+    res.send({ body: body });
   });
 });
 
