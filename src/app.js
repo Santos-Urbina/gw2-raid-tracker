@@ -12,7 +12,7 @@ const port = process.env.PORT || 8080;
 //Define paths for express config
 const publicDirectoryPath = path.join(__dirname, "../public");
 const viewsPath = path.join(__dirname, "../templates/views");
-const partialsPath = path.join(__dirname, "../template/partials");
+const partialsPath = path.join(__dirname, "../templates/partials");
 
 //set up hbs as the view engine, set views location
 app.set("view engine", "hbs");
@@ -24,7 +24,7 @@ app.use(express.static(publicDirectoryPath));
 
 app.get("", (req, res) => {
   res.render("index", {
-    title: "GW2 Raid Tracker",
+    title: "GW2 Raid Tracker Test",
   });
 });
 
@@ -40,7 +40,8 @@ app.get("/account", (req, res) => {
   accountData((error, body) => {
     if (error) return res.send(error);
 
-    res.send({ body: body });
+    res.send({ body: body.name });
+    console.log(body.name);
   });
 });
 
