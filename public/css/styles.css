@@ -1,0 +1,16 @@
+body {
+  font-family: "Century Gothic", sans-serif;
+  color: #333333;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
