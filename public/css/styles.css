@@ -14,3 +14,20 @@ h1 {
   font-size: 64px;
   margin-bottom: 16px;
 }
+
+.apiData {
+  display: flex;
+  flex-direction: row;
+}
+
+.apiData div {
+  width: 50%;
+}
+
+.apiData button {
+  width: 100%;
+}
+
+pre {
+  text-wrap: wrap;
+}
