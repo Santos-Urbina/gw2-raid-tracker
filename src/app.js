@@ -28,13 +28,13 @@ app.get("", (req, res) => {
   });
 });
 
-// app.get("/raids", (req, res) => {
-//   raidEncounterData((error, body) => {
-//     if (error) return res.send(error);
+app.get("/raids", (req, res) => {
+  raidEncounterData((error, body) => {
+    if (error) return res.send(error);
 
-//     res.send({ body: body });
-//   });
-// });
+    res.send({ body: body });
+  });
+});
 
 app.get("/account", (req, res) => {
   accountData((error, body) => {
