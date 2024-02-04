@@ -1,3 +1,5 @@
 # Guild Wars 2 Raid Tracker
 
-## Currently there is no in-game resource for checking if you have completed a raid this week. If you completed a raid on Monday, by Friday you may not remember whether or not you did. The purpose of this app is to track what raids you have/have not completed this week.
+## There is currently no in-game feature to check if you have completed a raid for the current week. This app's purpose is to allow a user to quickly check which raids they have/have not completed every week.
+
+## More functionality may be added later on so the names is subject to change.
