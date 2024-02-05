@@ -1,5 +1,7 @@
-const chai = require("chai").expect;
+const sum = require("./testTest");
 
-const accountData = require("./accountDataAxios");
+test("testing the test", () => {
+  const sumTest = sum(3, 4);
 
-const test = accountData();
+  expect(sumTest).toBe(7);
+});
