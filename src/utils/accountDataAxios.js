@@ -12,16 +12,15 @@ const accountData = (callback) => {
     .then((response) => {
       //handle succecss
       //console.log(response.data);
-      console.log("Successful api call");
+      //console.log("Successful api call");
       callback(response.data);
     })
     .catch((error) => {
       //handle error
-      console.log(error);
+      //console.log(error);
     })
     .finally(() => {
       //always executed
-      console.log("Finally");
     });
 };
 
