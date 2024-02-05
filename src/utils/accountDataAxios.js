@@ -25,6 +25,4 @@ const accountData = (callback) => {
     });
 };
 
-module.exports = {
-  accountData,
-};
+module.exports = accountData;

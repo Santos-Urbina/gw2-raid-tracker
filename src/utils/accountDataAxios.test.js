@@ -1,7 +1,12 @@
-const sum = require("./testTest");
+const accountData = require("./accountDataAxios");
 
-test("testing the test", () => {
-  const sumTest = sum(3, 4);
+test("account data", () => {
+  console.log("yes");
 
-  expect(sumTest).toBe(7);
+  const dataTest = accountData((error, body) => {
+    console.log("api call");
+  });
 });
+
+// To get this to work had to use latest version of jest,
+// earlier version did not work with axios.
